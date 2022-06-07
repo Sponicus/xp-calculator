@@ -4,6 +4,9 @@ const PORT = 3000;
 
 app.set('view engine', 'ejs');
 
+app.use(express.static("styles"));
+
+
 app.get('/', function (req, res) {
   res.render("home");
 })
